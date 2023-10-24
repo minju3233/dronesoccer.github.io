@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>FIDA</title>
+    <link href="images/favicon.png" rel="shortcut icon"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/reset.css" rel="stylesheet"/>
+  <!--제이쿼리-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!--플러그인호출-->
+  <!--스크립트-->
+  <script src="js/script.js"></script>
+  <script>
+    $(function(){
+      //동작서술하기
+      //버튼(.btn)을 클릭할 경우
+      //기존에 오픈되어 있는 메뉴는 사라지고,
+      //모든 li태그에 클래스(aco)가 지워짐
+      //클릭한 버튼과 형제인 서브메뉴(.sub)가 나타나고
+      //부모인 li태그에 클래스(aco)가 부여됨.
+
+      $('#menu .btn').click(function(){
+        var openSub = $(this).parent().hasClass('aco');
+        $('.sub').slideUp();
+        $('#menu li').removeClass('aco');
+        if(!openSub){
+          $(this).siblings('.sub').slideDown();
+          $(this).parent().addClass('aco');
+        }
+      });
+
+
+    });//$
+  </script>
+  </head>
+  <body>
+
+
+<div id="page-wrap">
+
+
+
+
+
+
+
+
+<div id="introduce2">
+
+<div class="wrap3">
+  <ul id="list">
+    <li><a href="#">Advisory Board</a></li>
+    <li><a href="#">Continental Confederations</a></li>
+    <li><a href="#">Organizational Chart</a></li>
+
+  </ul>
+  <ul id="list_menu">
+    <li>
+      <a href="#"></a>
+
+      <div class="wrap">
+      <div class="inner">
+      <h2>FIDA</h2>
+      <p><strong>Advisory Board</strong><br/>Federation of international dronesoccer association</p>
+      <span class="solid"></span>
+      </div><!--inner-->
+      <!--fixed_img-->
+
+      <div class="celar"></div>
+      </div><!--wrap-->
+
+
+
+      <div class="wrap5">
+
+        <div class="membership">
+          <div class="div-table">
+            <div class="div-table-cell membership_one">
+              <img src="images/person1.jpg">
+            </div>
+
+            <div class="div-table-cell membership_two">
+            -   <strong>Advisory Board : ooo</strong><br>
+              <br>
+              <p>
+              - Address :                                                        <br>
+              - Tel :  <br>
+              - 000@dronesoccer.org
+            </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="membership">
+          <div class="div-table">
+            <div class="div-table-cell membership_one">
+              <img src="images/person1.jpg">
+            </div>
+
+            <div class="div-table-cell membership_two">
+
+    - <strong>Secretary General : ooo</strong><br>
+  <br>
+  <p>
+    - Address : <br>
+    - Tel :  <br>
+    - 000@dronesoccer.org
+      </p>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </li>
+
+
+
+    <li>
+      <a href="#"></a>
+      <div class="wrap">
+      <div class="inner">
+      <h2>FIDA</h2>
+      <p><strong>Continental Confederations</strong><br/>Federation of international dronesoccer association</p>
+      <span class="solid"></span>
+      </div><!--inner-->
+      <!--fixed_img-->
+
+      <div class="celar"></div>
+      </div><!--wrap-->
+
+
+
+
+
+
+
+      <div class="wrap5">
+        <div id="css_tabs">
+  <input name="tab" id="tab1" type="radio" checked>
+  <input name="tab" id="tab2" type="radio">
+  <input name="tab" id="tab3" type="radio">
+  <input name="tab" id="tab4" type="radio">
+  <input name="tab" id="tab5" type="radio">
+  <input name="tab" id="tab6" type="radio">
+  <header>
+    <label for="tab1">Asian DS Union</label>
+    <label for="tab2">African DS Union</label>
+    <label for="tab3">Uuropean DS Union</label>
+    <label for="tab4">Oceanian DS Union</label>
+    <label for="tab5">Pan American DS Union</label>
+  </header>
+
+  <div class="tab1_content tc">
+
+
+      <h3>Asian DS Union</h3>
+        <br>
+        <p>
+          - Website : <br>
+          - Facebook : <br>
+          - Instagram : <br>
+        </p>
+
+      <div class="membership">
+        <div class="div-table">
+          <div class="div-table-cell membership_one">
+            <img src="images/person1.jpg">
+          </div>
+
+          <div class="div-table-cell membership_two">
+          -   <strong>President :  000</strong><br>
+            <br>
+            <p>
+            - Address : <br>
+            - Tel : <br>
+            - fida@dronesoccer.org
+          </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="membership">
+        <div class="div-table">
+          <div class="div-table-cell membership_one">
+            <img src="images/person1.jpg">
+          </div>
+
+          <div class="div-table-cell membership_two">
+
+  - <strong>Secretary General : 000</strong><br>
+<br>
+<p>
+  - Address : <br>
+  - Tel : <br>
+  - fida@dronesoccer.org
+          </div>
+
+        </div>
+      </div>
+
+
+  </div>
+
+
+
+
+
+
+  <div class="tab2_content tc">
+
+    <h3>African DS Union</h3>
+      <br>
+      <p>
+        - Address : <br>
+        - Tel : <br>
+        - fida@dronesoccer.org
+      </p>
+
+    <div class="membership">
+      <div class="div-table">
+        <div class="div-table-cell membership_one">
+          <img src="images/person1.jpg">
+        </div>
+
+        <div class="div-table-cell membership_two">
+        -   <strong>President : 000</strong><br>
+          <br>
+          <p>
+            - Address : <br>
+            - Tel : <br>
+            - fida@dronesoccer.org
+        </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="membership">
+      <div class="div-table">
+        <div class="div-table-cell membership_one">
+          <img src="images/person1.jpg">
+        </div>
+
+        <div class="div-table-cell membership_two">
+
+- <strong>Secretary General : 000</strong><br>
+<br>
+<p>
+  - Address : <br>
+  - Tel : <br>
+  - fida@dronesoccer.org
+  </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tab3_content tc">
+    <h3>Uuropean DS Union</h3>
+      <br>
+      <p>
+        - Website : <br>
+        - Facebook : <br>
+        - Instagram : <br>
+      </p>
+
+    <div class="membership">
+      <div class="div-table">
+        <div class="div-table-cell membership_one">
+          <img src="images/person1.jpg">
+        </div>
+
+        <div class="div-table-cell membership_two">
+        -   <strong>President : Ro Sang heub</strong><br>
+          <br>
+          <p>
+            - Address : <br>
+            - Tel :  <br>
+            - 000@dronesoccer.org
+        </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="membership">
+      <div class="div-table">
+        <div class="div-table-cell membership_one">
+          <img src="images/person1.jpg">
+        </div>
+
+        <div class="div-table-cell membership_two">
+
+- <strong>President :000</strong><br>
+<br>
+<p>
+- Address : <br>
+- Tel : <br>
+- 000@panamericantaekwondounion.org
+  </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tab4_content tc">
+    <h3>Oceanian DS Union</h3>
+      <br>
+      <p>
+        - Website : <br>
+        - Facebook : <br>
+        - Instagram : <br>
+      </p>
+
+    <div class="membership">
+      <div class="div-table">
+        <div class="div-table-cell membership_one">
+          <img src="images/person1.jpg">
+        </div>
+
+        <div class="div-table-cell membership_two">
+        -   <strong>President : 000</strong><br>
+          <br>
+          <p>
+          - Address : <br>
+          - Tel : <br>
+          - 000@dronesoccer.org
+        </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="membership">
+      <div class="div-table">
+        <div class="div-table-cell membership_one">
+          <img src="images/person1.jpg">
+        </div>
+
+        <div class="div-table-cell membership_two">
+
+- <strong>President : 000</strong><br>
+<br>
+<p>
+- Address : <br>
+- Tel :  <br>
+- 000@dronesoccer.org
+  </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tab5_content tc">
+    <h3>Pan American DS Union</h3>
+      <br>
+      <p>
+        - Website : <br>
+        - Facebook : <br>
+        - Instagram : <br>
+      </p>
+
+    <div class="membership">
+      <div class="div-table">
+        <div class="div-table-cell membership_one">
+          <img src="images/person1.jpg">
+        </div>
+
+        <div class="div-table-cell membership_two">
+        -   <strong>President : 000 </strong><br>
+          <br>
+          <p>
+            - Address : <br>
+            - Tel :  <br>
+            - 000@dronesoccer.org
+        </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="membership">
+      <div class="div-table">
+        <div class="div-table-cell membership_one">
+          <img src="images/person1.jpg">
+        </div>
+
+        <div class="div-table-cell membership_two">
+
+- <strong>President : 000</strong><br>
+<br>
+<p>
+  - Address : <br>
+  - Tel :  <br>
+  - 000@dronesoccer.org
+  </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tab6_content tc">
+    <p>Pan American DS Union</p>
+
+  </div>
+
+</div>
+
+
+
+
+
+      </div>
+
+
+    </li>
+
+
+    <li>
+      <a href="#"></a>
+
+      <div class="wrap">
+      <div class="inner">
+      <h2>FIDA</h2>
+      <p><strong>  Working Committee
+</strong><br/>Federation of international dronesoccer association</p>
+      <span class="solid"></span>
+      </div><!--inner-->
+      <!--fixed_img-->
+
+      <div class="celar"></div>
+      </div><!--wrap-->
+
+
+      <div class="wrap5">
+      <div class="contents2">
+        <div class="ci_title">
+          <div id="menu">
+            <ul>
+              <li><a href="#" class="btn">Performance Committee</a>
+                <div class="sub">
+                  <ul>
+                    <li class="aco">Performance Committee</li>
+
+                  </ul>
+                </div><!--//sub-->
+              </li>
+              <li><a href="#" class="btn"> Referees Committee</a>
+                <div class="sub">
+                  <ul>
+                    <li> Referees Committee</li>
+
+                  </ul>
+                </div><!--//sub-->
+              </li>
+              <li><a href="#" class="btn">Rules Improvement Committee</a>
+                <div class="sub">
+                  <ul>
+                    <li>Rules Improvement Committee</li>
+
+                  </ul>
+                </div><!--//sub-->
+              </li>
+              <li><a href="#" class="btn">Competition Planning Committee</a>
+                <div class="sub">
+                  <ul>
+                    <li>Competition Planning Committee</li>
+
+                  </ul>
+                </div><!--//sub-->
+              </li>
+              <li><a href="#" class="btn">Standards Review Committee</a>
+                <div class="sub">
+                  <ul>
+                    <li>Standards Review Committee</li>
+
+                  </ul>
+                </div><!--//sub-->
+              </li>
+              <li><a href="#" class="btn">Athletes Committee</a>
+                <div class="sub">
+                  <ul>
+                    <li>Athletes Committee</li>
+
+                  </ul>
+                </div><!--//sub-->
+              </li>
+              <li><a href="#" class="btn">Friendship Committee</a>
+                <div class="sub">
+                  <ul>
+                    <li>Friendship Committee</li>
+
+                  </ul>
+                </div><!--//sub-->
+              </li>
+
+              <li><a href="#" class="btn">Innovation Committee</a>
+                <div class="sub">
+                  <ul>
+                    <li>Innovation Committee</li>
+
+                  </ul>
+                </div><!--//sub-->
+              </li>
+
+
+
+
+            </ul>
+          </div><!--//menu-->
+        </div><!--ci_title-->
+      </div>
+
+
+      </div>
+
+
+    </li>
+
+
+
+</ul>
+</div><!--//WRAP-->
+</div>
+
+
+
+<script>
+
+jQuery(function($){
+var
+$tab = $('#list > li')
+,$box = $('#list_menu > li')
+;
+
+$tab.eq(0).addClass('on');
+$tab.css('width',100/$tab.length +'%');
+
+$box.eq(0).addClass('on');
+$box.children('div').css('display','none');
+$box.eq(0).children('div').css('display','block');
+
+$tab.children('a').on('click',function(){
+var
+  $li = $(this).parent()
+  ,$sib = $(this).parent().siblings()
+  ,$index = $(this).parent().index()
+;
+
+$li.addClass('on');
+$sib.removeClass('on');
+$box.removeClass('on');
+$box.children('div').css('display','none');
+$box.eq($index).addClass('on');
+$box.eq($index).children('div').css('display','block');
+
+return false;
+});
+
+$box.children('a').on('click',function(){
+var
+  $li = $(this).parent()
+  ,$sib = $(this).parent().siblings()
+  ,$index = $(this).parent().index()
+;
+
+$li.addClass('on');
+$(this).next().slideDown(200);
+$sib.removeClass('on');
+$sib.children('div').slideUp(200);
+$tab.removeClass('on');
+$tab.eq($index).addClass('on');
+
+return false;
+});
+});
+
+
+  </script>
+
+
+
+
+    </div><!--page-wrap-->
+
+
+
+
+  </body>
+</html>
