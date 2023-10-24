@@ -1,0 +1,9 @@
+/*웹폰트만들기 p351*/
+
+@font-face{
+  font-family:'나눔';
+  src:url('font/NanumGothic.woff') format('woff');
+  src:url('font/NanumGothic.eot') format('embedded-opentype');
+  src:url('font/NanumGothic.ttf') format('truetype');
+
+}
